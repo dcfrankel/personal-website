@@ -1,0 +1,8 @@
+*.cpcache
+*cljs
+*clojure
+*demo
+*goog
+*process
+*cljs_deps.js
+*cljsc_opts.edn
