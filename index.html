@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <header>
         <div class="menu-toggler">
             <div class="bar half start"></div>
@@ -42,10 +41,10 @@
     </header>
     <section class="about" id="about">
         <div class="container">
-            <div class="profile-img">
-                <img src="http://via.placeholder.com/800x400" alt="Placeholder Image">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+                <img src="images/profile.png" alt="Profile Image">
             </div>
-            <div class="about-details">
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
                 <div class="about-heading">
                     <h1>About</h1>
                     <h6>Myself</h6>
@@ -61,20 +60,23 @@
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                     est laborum.
                 </p>
-            </div>
-            <div class="social-media">
-                <ul class="nav-li">
-                    <li>
-                        <a href="#" class="icon-link">
-                            <i class="fab fa github-square"></i>
+                <div class="social-media">
+                    <div class="product-logo">
+                        <a href="https://github.com/dcfrankel" class="icon-link">
+                            <img src="images/GitHub-Mark-120px-plus.png" alt="Github" class="github-icon icon-image">
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="product-logo">
+                        <a href="https://www.linkedin.com/in/frankelcdavid" class="icon-link">
+                            <img src="images/LI-Logo.png" alt="LinkedIn" class="linkedin-icon icon-image">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="my-skills" id="my-skills">
-        <div class="skill">
+        <div class="skill" data-aos="fade-in" data-aos-delay="300">
             <div class="icon-container">
                 <i class="fas fa-layer-group"></i>
                 <h1>Data Engineering</h1>
@@ -82,15 +84,16 @@
                     Some text about my data engineering skils.
                 </p>
             </div>
-            <div class="skill">
-                <div class="icon-container">
-                    <i class="fas fa-layer-group"></i>
-                    <h1>Backend Engineer</h1>
-                    <p>
-                        Some text about my backend engineering skils.
-                    </p>
-                </div>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="600">
+            <div class="icon-container">
+                <i class="fas fa-layer-group"></i>
+                <h1>Backend Engineer</h1>
+                <p>
+                    Some text about my backend engineering skils.
+                </p>
             </div>
+        </div>
     </section>
     <section class="projects" id="projects">
         <div class="container">
@@ -100,9 +103,6 @@
             </div>
 
             <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="images/some_image.jpeg" alt="">
-                </div>
                 <div class="portfolio-description">
                     <h6>Data Engineering Related Project</h6>
                     <h3>Project Name</h3>
@@ -118,10 +118,7 @@
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-img">
-                    <img src="images/some_image.jpeg" alt="">
-                </div>
-                <div class="portfolio-description">
+                <div class="portfolio-description has-margin-right">
                     <h6>Backend Engineering Project</h6>
                     <h3>Project Name</h3>
                     <p>
@@ -141,7 +138,7 @@
                 <h1>Work Experience</h1>
                 <h6>Past and Current Jobs</h6>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
                 <ul>
                     <li class="date" data-date="2017 - Present">
                         <h1>Zoominfo</h1>
@@ -165,7 +162,7 @@
                 <h1>Contact</h1>
                 <h6>Let's build something cool</h6>
             </div>
-            <form action="">
+            <form action="" data-aos="fade-up" data-aos-delay="300">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                 <label for="email">Email:</label>
@@ -181,12 +178,15 @@
             </form>
         </div>
     </section>
-    <footer>
+    <footer class="copyright">
         <div class="up" id="up">
-            <i class="fas fa-chevron-up"></i>
-            <p>&copy; 2020 - David Frankel - All rights reserved.</p>
+            <img src="images/arrow-up-circle.svg" alt="Arrow" class="up-arrow">
         </div>
+        <p>&copy; 2020 - David Frankel - All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
