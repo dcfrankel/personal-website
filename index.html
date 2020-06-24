@@ -9,36 +9,23 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code|Material+Icons">
 </head>
 
 <body>
     <header>
-        <div class="menu-toggler">
-            <div class="bar half start"></div>
-            <div class="bar"></div>
-            <div class="bar half end"></div>
+        <div class="dropdown">
+            <button class="drop-button" id="drop-button">Navigation</button>
+            <div class="dropdown-content">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
         </div>
-        <nav class="top-nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
         <div class="landing-text">
             <h1>David Frankel</h1>
-            <h6>Backend Developer | Data Engineer | Complete Nerd</h6>
+            <h6>Developer | Data Engineer | Tech Enthusiast</h6>
         </div>
     </header>
     <section class="about" id="about">
@@ -64,13 +51,13 @@
                 </p>
                 <div class="social-media">
                     <div class="product-logo">
-                        <a href="https://github.com/dcfrankel" class="icon-link">
-                            <img src="images/GitHub-Mark-120px-plus.png" alt="Github" class="github-icon icon-image">
+                        <a href="https://github.com/dcfrankel">
+                            <img src="images/GitHub-Mark-120px-plus.png" alt="GitHub" class="icon-image">
                         </a>
                     </div>
                     <div class="product-logo">
-                        <a href="https://www.linkedin.com/in/frankelcdavid" class="icon-link">
-                            <img src="images/LI-Logo.png" alt="LinkedIn" class="linkedin-icon icon-image">
+                        <a href="https://www.linkedin.com/in/frankelcdavid">
+                            <img src="images/LI-In-Bug.png" alt="LinkedIn" class="icon-image">
                         </a>
                     </div>
                 </div>
@@ -162,18 +149,13 @@
         <div class="container">
             <div class="section-heading">
                 <h1>Contact</h1>
-                <h6>Let's build something cool</h6>
+                <h6>Let's Build Software Together</h6>
             </div>
             <form action="" data-aos="fade-up" data-aos-delay="300">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email..." required>
-                <label for="name">Services:</label>
-                <select name="services" id="services">
-                    <option value="">Data Engineering</option>
-                    <option value="">Backend Engineering</option>
-                </select>
                 <label for="subject">Subject:</label>
                 <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
                 <input type="submit" value="submit">
@@ -190,5 +172,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
-
 </html>
