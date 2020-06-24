@@ -7,7 +7,7 @@
 
 html{
     font-size: 10px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Fira Code', sans-serif;
     color: grey;
 }
 
@@ -123,7 +123,7 @@ li{
 }
 
 .nav-link{
-    font-family: Helvetica, sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-size: 5rem;
     padding: 1rem;
 }
@@ -200,7 +200,7 @@ li{
 
 .landing-text h1{
     font-size: 15rem;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Fira Code', sans-serif;
     background: linear-gradient(to top, chocolate, coral);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
