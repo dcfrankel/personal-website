@@ -151,10 +151,8 @@ li {
 
 .landing-text h1 {
     font-size: 10rem;
-    font-family: 'Fira Code', sans-serif;
-    background: linear-gradient(to top, chocolate, coral);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: chocolate;
+    text-shadow: 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     user-select: none;
 }
@@ -192,6 +190,11 @@ li {
     margin-right: 5rem;
 }
 
+.profile-img img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
 .about-details {
     flex: 1;
 }
@@ -199,6 +202,8 @@ li {
 .social-media {
     display: flex;
     margin-top: 5rem;
+    text-align: center;
+
 }
 
 .social-media i {
@@ -210,6 +215,7 @@ li {
     background: none;
     flex: 33.33%;
     padding: 5px;
+    
 }
 
 .icon-image {
@@ -223,16 +229,6 @@ li {
 
 .icon-image:hover {
     opacity: 0.7;
-}
-
-.github-icon {
-    max-height: 50px;
-    max-width: 50px;
-}
-
-.linkedin-icon {
-    max-height: 25%;
-    max-width: 25%;
 }
 
 .my-skills {
