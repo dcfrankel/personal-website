@@ -1,7 +1,7 @@
-
 /* Define main vars here */
+
 :root {
-    --background-color:white;
+    --background-color: white;
     --primary-color: rgb(203, 91, 60);
     --secondary-color: rgb(221, 138, 87);
 }
@@ -52,7 +52,7 @@ li {
     margin: 0 2rem;
 }
 
-h1{
+h1 {
     color: var(--primary-color);
 }
 
@@ -472,34 +472,27 @@ input[type="submit"]:hover {
     body {
         background-size: cover;
     }
-
     .landing-text h1 {
         font-size: 15rem;
     }
-
     .landing-text h6 {
         font-size: 1.5rem;
     }
-
     .nav-list {
         flex-direction: column;
     }
-
     li {
         margin: 2rem 0;
     }
-
     .nav-link {
         font-size: 4.5rem;
     }
-
     .about-heading h1 {
         font-size: 8rem;
     }
     .section-heading h1 {
         font-size: 3rem;
     }
-
     .section-heading h6 {
         font-size: 2.5rem;
     }
