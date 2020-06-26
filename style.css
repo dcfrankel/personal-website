@@ -1,3 +1,11 @@
+
+/* Define main vars here */
+:root {
+    --background-color:white;
+    --primary-color: rgb(203, 91, 60);
+    --secondary-color: rgb(221, 138, 87);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +21,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: white no-repeat center fixed;
+    background: var(--background-color) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -37,19 +45,25 @@ img {
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
 }
 
 li {
     margin: 0 2rem;
 }
 
+h1{
+    color: var(--primary-color);
+}
+
 .drop-button {
-    background-color: chocolate;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
     padding: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown {
@@ -60,31 +74,27 @@ li {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: whitesmoke;
-    min-width: 160px;
+    background-color: var(--background-color)smoke;
+    min-width: 135px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 2rem;
-    font-size: 2.5rem;
+    padding: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
     animation: pulse 2s infinite;
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .drop-button {
-    background-color: coral;
 }
 
 .container {
@@ -97,12 +107,11 @@ li {
 
 .section-heading {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .section-heading h1 {
     font-size: 3.5rem;
-    color: rgb(grey, grey, .3);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -115,7 +124,7 @@ li {
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: chocolate;
+    background-color: var(--secondary-color);
 }
 
 .section-heading h1::before {
@@ -150,16 +159,17 @@ li {
 }
 
 .landing-text h1 {
+    margin-top: 0;
     font-size: 10rem;
-    color: chocolate;
-    text-shadow: 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     user-select: none;
+    color: var(--secondary-color);
 }
 
 .landing-text h6 {
     font-size: 2rem;
     font-weight: 300;
+    color: var(--primary-color);
 }
 
 .about .container {
@@ -173,6 +183,7 @@ li {
     text-transform: uppercase;
     line-height: 0;
     margin-bottom: 6rem;
+    color: var(--primary-color);
 }
 
 .about-heading h1 {
@@ -183,14 +194,14 @@ li {
 .about-heading h6 {
     font-size: 2rem;
     font-weight: 300;
+    margin-bottom: 7.5rem;
 }
 
 .profile-img {
     flex: 1;
-    margin-right: 5rem;
 }
 
-.profile-img img{
+.profile-img img {
     max-width: 50%;
     max-height: 50%;
 }
@@ -203,7 +214,6 @@ li {
     display: flex;
     margin-top: 5rem;
     text-align: center;
-
 }
 
 .social-media i {
@@ -215,7 +225,6 @@ li {
     background: none;
     flex: 33.33%;
     padding: 5px;
-    
 }
 
 .icon-image {
@@ -236,7 +245,6 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2.5rem;
-    text-align: center;
 }
 
 .skill {
@@ -248,26 +256,30 @@ li {
 }
 
 .skill h1 {
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 2rem -2px 2rem 0;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
-.icon-container {
-    width: 10rem;
-    height: 10rem;
-    border: 3px solid chocolate;
-    background-color: beige;
-    margin-bottom: 2rem;
+.skill-container {
+    width: 50rem;
+    height: 12rem;
     display: flex;
-    transform: rotate(45 degree);
 }
 
-.icon-container i {
-    color: chocolate;
-    font: 5rem;
+.skill-container i {
+    color: var(--primary-color);
     margin: auto;
-    transform: rotate(-45deg);
+}
+
+.material-icons.md-60 {
+    font-size: 60px;
+}
+
+.skill-container p {
+    width: 30rem;
 }
 
 .portfolio-item {
@@ -308,17 +320,17 @@ li {
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: chocolate;
+    color: var(--secondary-color);
     transition: color 650ms;
 }
 
 .portfolio-description .cta:hover {
-    color: coral
+    color: var(--secondary-color)
 }
 
 .timeline ul {
-    border-left: 4px solid coral;
-    border-radius: .8rem;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
     position: relative;
@@ -333,11 +345,10 @@ li {
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 1rem;
-    opacity: .3;
 }
 
 .timeline .date {
-    border-bottom: 1px solid coral;
+    border-bottom: 1px solid var(--secondary-color);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     position: relative;
@@ -358,24 +369,24 @@ li {
 
 .timeline .date::before {
     content: attr(data-date);
-    left: -21rem;
+    left: -28rem;
     text-align: right;
     min-width: 12rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .timeline .date::after {
     content: '';
-    box-shadow: 0 0 0 4px coral;
+    box-shadow: 0 0 0 4px var(--secondary-color);
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: whitesmoke;
+    background-color: var(--background-color);
 }
 
 .contact {
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 form {
@@ -384,30 +395,35 @@ form {
 }
 
 form label {
-    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-size: 2rem;
 }
 
 input, select, textarea {
+    font-size: 1.5rem;
     width: 100%;
     padding: 1rem;
     margin-bottom: 5px;
-    border: none;
-    outline-color: white;
+    outline-color: var(--background-color);
 }
 
 input[type="submit"] {
+    font-size: 2rem;
+    margin-top: 1rem;
     width: initial;
-    background-color: chocolate;
-    color: whitesmoke;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     padding: 1rem 2rem;
     border-radius: .8rem;
     cursor: pointer;
     transition: background-color 650ms;
+    opacity: 90%;
+    border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 input[type="submit"]:hover {
-    color: chocolate;
-    background-color: whitesmoke;
+    opacity: 100%;
 }
 
 .up {
@@ -429,7 +445,7 @@ input[type="submit"]:hover {
 .copyright {
     width: 100%;
     text-align: center;
-    background-color: white;
+    background-color: var(--background-color);
     padding: 2rem 0;
     position: relative;
 }
@@ -437,6 +453,8 @@ input[type="submit"]:hover {
 .copyright p {
     font-size: 1.6rem;
 }
+
+/* Animations */
 
 @keyframes pulse {
     0% {
@@ -452,29 +470,38 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: white;
         background-size: cover;
     }
+
     .landing-text h1 {
         font-size: 15rem;
     }
+
     .landing-text h6 {
         font-size: 1.5rem;
     }
+
     .nav-list {
         flex-direction: column;
     }
+
     li {
         margin: 2rem 0;
     }
+
     .nav-link {
         font-size: 4.5rem;
     }
+
     .about-heading h1 {
         font-size: 8rem;
     }
     .section-heading h1 {
         font-size: 3rem;
+    }
+
+    .section-heading h6 {
+        font-size: 2.5rem;
     }
     .about-details .nav-list {
         flex-direction: initial;
@@ -482,12 +509,13 @@ input[type="submit"]:hover {
     .about-details li {
         margin: 0 2rem;
     }
-    .icon-container {
+    .skill-container {
         width: 7rem;
         height: 7rem;
     }
-    .icon-container i {
-        font-size: 4rem;
+    .skill i {
+        width: 50px;
+        height: 50px;
     }
     .timeline ul {
         margin: 0 0 0 auto;
