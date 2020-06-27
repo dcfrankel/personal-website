@@ -1,10 +1,20 @@
-/* Define main vars here */
+/* ===================
+Vars
 
+Define main vars here 
+======================*/
 :root {
     --background-color: white;
     --primary-color: rgb(203, 91, 60);
     --secondary-color: rgb(221, 138, 87);
 }
+
+
+/* ===========
+Defaults 
+
+Most of the basic styling defaults
+*/
 
 * {
     margin: 0;
@@ -56,6 +66,30 @@ h1 {
     color: var(--primary-color);
 }
 
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+input, select, textarea {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    outline-color: var(--background-color);
+}
+
+
+/* ==============
+Styling 
+
+The main styling portion targeting specific classes
+*/
 .drop-button {
     background-color: var(--secondary-color);
     color: var(--background-color);
@@ -389,24 +423,6 @@ h1 {
     background-color: var(--background-color);
 }
 
-form {
-    width: 70%;
-    margin: 0 auto;
-}
-
-form label {
-    color: var(--primary-color);
-    font-size: 2rem;
-}
-
-input, select, textarea {
-    font-size: 1.5rem;
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 5px;
-    outline-color: var(--background-color);
-}
-
 input[type="submit"] {
     font-size: 2rem;
     margin-top: 1rem;
@@ -454,8 +470,11 @@ input[type="submit"]:hover {
     font-size: 1.6rem;
 }
 
-/* Animations */
+/* ========================
+Animations 
 
+Various animations to use for elements.
+===========================*/
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(255, 123, 67, 0.8);
@@ -468,6 +487,13 @@ input[type="submit"]:hover {
     }
 }
 
+
+/* ======================================== 
+Screen adjustment settings.
+
+Change settings depending on screen size. Useful for 
+smartphone or tablet layout.s 
+==========================================*/
 @media screen and (max-width: 768px) {
     body {
         background-size: cover;
