@@ -3,12 +3,12 @@ Vars
 
 Define main vars here 
 ======================*/
-:root {
-    --background-color: white;
-    --primary-color: rgb(203, 91, 60);
-    --secondary-color: rgb(221, 138, 87);
-}
 
+:root {
+    --background-color: 255, 255, 255;
+    --primary-color: 203, 91, 60;
+    --secondary-color: 221, 138, 87;
+}
 
 /* ===========
 Defaults 
@@ -31,7 +31,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: var(--background-color) no-repeat center fixed;
+    background: rgb(var(--background-color)) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ li {
 }
 
 h1 {
-    color: var(--primary-color);
+    color: rgb(var(--primary-color));
 }
 
 form {
@@ -72,7 +72,7 @@ form {
 }
 
 form label {
-    color: var(--primary-color);
+    color: rgb(var(--primary-color));
     font-size: 2rem;
 }
 
@@ -81,18 +81,18 @@ input, select, textarea {
     width: 100%;
     padding: 1rem;
     margin-bottom: 5px;
-    outline-color: var(--background-color);
+    outline-color: rgb(var(--background-color));
 }
-
 
 /* ==============
 Styling 
 
 The main styling portion targeting specific classes
 */
+
 .drop-button {
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--background-color));
     padding: 2rem;
     font-size: 2rem;
     border: none;
@@ -108,7 +108,7 @@ The main styling portion targeting specific classes
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--background-color)smoke;
+    background-color: rgb(var(--background-color))smoke;
     min-width: 135px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -124,7 +124,7 @@ The main styling portion targeting specific classes
 
 .dropdown-content a:hover {
     animation: pulse 2s infinite;
-    background-color: var(--background-color);
+    background-color: rgb(var(--background-color));
 }
 
 .dropdown:hover .dropdown-content {
@@ -149,7 +149,7 @@ The main styling portion targeting specific classes
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .section-heading h1::before, .section-heading h1::after {
@@ -158,7 +158,7 @@ The main styling portion targeting specific classes
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--secondary-color);
+    background-color: rgb(var(--secondar-color));
 }
 
 .section-heading h1::before {
@@ -175,8 +175,9 @@ The main styling portion targeting specific classes
 }
 
 .section-heading h6 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
+    margin: 2rem;
 }
 
 .has-margin-right {
@@ -197,13 +198,13 @@ The main styling portion targeting specific classes
     font-size: 10rem;
     padding: 1rem;
     user-select: none;
-    color: var(--secondary-color);
+    color: rgb(var(--primary-color));
 }
 
 .landing-text h6 {
     font-size: 2rem;
     font-weight: 300;
-    color: var(--primary-color);
+    color: rgb(var(--secondar-color));
 }
 
 .about .container {
@@ -217,7 +218,7 @@ The main styling portion targeting specific classes
     text-transform: uppercase;
     line-height: 0;
     margin-bottom: 6rem;
-    color: var(--primary-color);
+    color: rgb(var(--primary-color));
 }
 
 .about-heading h1 {
@@ -304,7 +305,7 @@ The main styling portion targeting specific classes
 }
 
 .skill-container i {
-    color: var(--primary-color);
+    color: rgb(var(--primary-color));
     margin: auto;
 }
 
@@ -354,16 +355,16 @@ The main styling portion targeting specific classes
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: var(--secondary-color);
+    color: rgb(var(--secondar-color));
     transition: color 650ms;
 }
 
 .portfolio-description .cta:hover {
-    color: var(--secondary-color)
+    color: rgb(var(--secondar-color))
 }
 
 .timeline ul {
-    border-left: 4px solid var(--secondary-color);
+    border-left: 4px solid rgb(var(--secondar-color));
     border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -382,7 +383,7 @@ The main styling portion targeting specific classes
 }
 
 .timeline .date {
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid rgb(var(--secondar-color));
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     position: relative;
@@ -411,24 +412,24 @@ The main styling portion targeting specific classes
 
 .timeline .date::after {
     content: '';
-    box-shadow: 0 0 0 4px var(--secondary-color);
+    box-shadow: 0 0 0 4px rgb(var(--secondar-color));
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: var(--background-color);
+    background-color: rgb(var(--background-color));
 }
 
 .contact {
-    background-color: var(--background-color);
+    background-color: rgb(var(--background-color));
 }
 
 input[type="submit"] {
     font-size: 2rem;
     margin-top: 1rem;
     width: initial;
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--background-color));
     padding: 1rem 2rem;
     border-radius: .8rem;
     cursor: pointer;
@@ -461,7 +462,7 @@ input[type="submit"]:hover {
 .copyright {
     width: 100%;
     text-align: center;
-    background-color: var(--background-color);
+    background-color: rgb(var(--background-color));
     padding: 2rem 0;
     position: relative;
 }
@@ -475,18 +476,18 @@ Animations
 
 Various animations to use for elements.
 ===========================*/
+
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(255, 123, 67, 0.8);
+        box-shadow: 0 0 0 0 rgba(var(--secondary-color), .8);
     }
     70% {
-        box-shadow: 0 0 0 2rem rgba(255, 123, 67, 0);
+        box-shadow: 0 0 0 2rem rgba(var(--secondary-color), 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(255, 123, 67, 0.8);
+        box-shadow: 0 0 0 0 rgba(var(--secondary-color), .8);
     }
 }
-
 
 /* ======================================== 
 Screen adjustment settings.
@@ -494,6 +495,7 @@ Screen adjustment settings.
 Change settings depending on screen size. Useful for 
 smartphone or tablet layout.s 
 ==========================================*/
+
 @media screen and (max-width: 768px) {
     body {
         background-size: cover;
