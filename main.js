@@ -16,7 +16,7 @@ $(document).ready(function() {
     // Get those cool fade in animations for elements
     AOS.init({
         easing: 'ease',
-        duration: 800,
+        duration: 1200,
         once: true
     })
 })

@@ -21,7 +21,9 @@
     <!-- Basic dropdown for navigation -->
     <header>
         <div class="dropdown">
-            <button class="drop-button" id="drop-button">Navigation</button>
+            <button class="drop-button" id="drop-button">
+                <i class="material-icons md-60">menu</i>
+            </button>
             <div class="dropdown-content">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="#projects" class="nav-link">Projects</a>
@@ -35,12 +37,12 @@
         </div>
     </header>
     <!-- General information about myself -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-in" data-aos-delay="300">
         <div class="container">
-            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+            <div class="profile-img">
                 <img src="assets/profile.png" alt="Profile Image">
             </div>
-            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+            <div class="about-details">
                 <div class="about-heading">
                     <h1>About</h1>
                     <h6>Myself</h6>
@@ -74,7 +76,7 @@
     </section>
     <!-- Short description of of my skills -->
     <section class="my-skills" id="my-skills">
-        <div class="skill" data-aos="fade-in" data-aos-delay="300">
+        <div class="skill">
             <h1>Data Engineering</h1>
             <div class="skill-container">
                 <i class="material-icons md-60">storage</i>
@@ -97,11 +99,11 @@
     <!-- Overview of some of the projects I've worked on -->
     <section class="projects" id="projects">
         <div class="container">
-            <div class="section-heading">
+            <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
                 <h1>My Projects</h1>
                 <h6>Some of my side projects</h6>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item" data-aos="fade-in" data-aos-delay="300">
                 <div class="portfolio-description">
                     <h6>Data Engineering Related Project</h6>
                     <h1>Project Name</h1>
@@ -118,7 +120,7 @@
                     <a href="#" class="cta">View Details</a>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item" data-aos="fade-in" data-aos-delay="300">
                 <div class="portfolio-description has-margin-right">
                     <h6>General Development Related Project</h6>
                     <h1>Project Name</h1>
@@ -138,13 +140,13 @@
         </div>
     </section>
     <!-- Brief description of work experience. Not meant to be full resume.-->
-    <section class="experience" id="experience">
+    <section class="experience" id="experience" data-aos="fade-in" data-aos-delay="300">
         <div class="container">
             <div class="section-heading">
                 <h1>Work Experience</h1>
                 <h6>Past and Current Jobs</h6>
             </div>
-            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+            <div class="timeline">
                 <ul>
                     <li class="date" data-date="2017 - Present">
                         <h1>Zoominfo</h1>
@@ -163,14 +165,13 @@
         </div>
     </section>
     <!-- Contact information -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <div class="section-heading">
                 <h1>Contact</h1>
                 <h6>Let's Build Something, Together</h6>
             </div>
-            <form enctype="text/plain" method="GET" action="mailto:dcfrankel@outlook.com" data-aos="fade-up"
-                data-aos-delay="300">
+            <form enctype="text/plain" method="GET" action="mailto:dcfrankel@outlook.com">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                 <label for="subject">Subject:</label>
