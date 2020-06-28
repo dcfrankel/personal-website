@@ -80,7 +80,11 @@ input, select, textarea {
     width: 100%;
     padding: 1rem;
     margin-bottom: 5px;
-    outline-color: rgb(var(--background-color));
+    outline-color: grey;
+}
+
+textarea:focus, input:focus{
+    outline-color: grey;
 }
 
 /* ==============
