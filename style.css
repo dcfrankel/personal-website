@@ -83,8 +83,15 @@ input, select, textarea {
     outline-color: grey;
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus {
     outline-color: grey;
+}
+
+hr.rounded {
+    color: rgb(var(--secondary-color));
+    border-bottom: .25rem solid rgb(var(--secondary-color));
+    border-radius: .25rem;
+    border-style: solid;
 }
 
 /* ==============
@@ -350,6 +357,7 @@ The main styling portion targeting specific classes
     margin: 0 auto;
     position: relative;
     padding: 5rem;
+    padding-top: 2rem;
     list-style: none;
     text-align: left;
     width: 70%;
@@ -363,11 +371,11 @@ The main styling portion targeting specific classes
 }
 
 .timeline .date {
-    border-bottom: 1px solid rgb(var(--secondary-color));
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     position: relative;
 }
+
 
 .timeline .date:last-of-type {
     padding-right: 0;
