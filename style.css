@@ -255,6 +255,7 @@ The main styling portion targeting specific classes
 
 .my-skills {
     margin-top: 10rem;
+    margin-bottom: 15rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2.5rem;
@@ -293,7 +294,7 @@ The main styling portion targeting specific classes
 }
 
 .skill-container p {
-    width: 30rem;
+    width: 50rem;
 }
 
 .portfolio-item {
