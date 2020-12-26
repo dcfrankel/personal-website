@@ -1,5 +1,12 @@
+// Add in fade in animations for elements
+AOS.init({
+    easing: 'ease',
+    duration: 1200,
+    once: true
+})
+
 // Smooth scrolling for navigation links
-const navLinks = document.querySelectorAll('.dropdown-content a');
+const navLinks = document.querySelectorAll('.dropdown a');
 for (const navLink of navLinks) {
     navLink.addEventListener("click", scrollToNavLink);
 }
@@ -16,14 +23,17 @@ function scrollToNavLink(e) {
 // Up bottom scrolling
 const arrowButton = document.getElementById("up");
 arrowButton.addEventListener("click", function () {
-    document.getElementById("dropdown").scrollIntoView({
+    document.getElementById("top").scrollIntoView({
         behavior: 'smooth'
     })
 });
 
-// Add in fade in animations for elements
-AOS.init({
-    easing: 'ease',
-    duration: 1200,
-    once: true
-})
+// Add different state to submit button
+let submitButton = document.getElementById("submit");
+submitButton.addEventListener("click", submitActive);
+function submitActive() {
+    submitButton.classList.toggle("is_active");
+    setTimeout(function() {
+        submitButton.classList.toggle("is_active");
+    }, 1000)
+}

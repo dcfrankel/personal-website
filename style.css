@@ -1,8 +1,8 @@
-/* ===================
+/*
 Vars
 
 Define main vars here 
-======================*/
+*/
 
 :root {
     --background-color: 255, 255, 255;
@@ -10,8 +10,7 @@ Define main vars here
     --secondary-color: 221, 138, 87;
 }
 
-
-/* ===========
+/*
 Defaults 
 
 Most of the basic styling defaults
@@ -95,55 +94,27 @@ hr.rounded {
     border-style: solid;
 }
 
-/* ==============
+/*
 Styling 
 
 The main styling portion targeting specific classes
 */
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.drop-button {
-    background-color: rgb(var(--primary-color));
-    left: 0px;
-    color: rgb(var(--background-color));
-    font-size: 2rem;
-    border: none;
+.dropdown a {
+    color: rgb(var(--primary-color));
+    font-size: 2.5rem;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     cursor: pointer;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.drop-button i {
-    margin: .75rem;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(var(--background-color))smoke;
-    min-width: 135px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 1.5rem;
-    font-size: 2rem;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    animation: pulse 2s infinite;
-    background-color: rgb(var(--background-color));
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown a:hover {
+    color: rgb(var(--secondary-color));
 }
 
 .container {
@@ -377,7 +348,6 @@ The main styling portion targeting specific classes
     position: relative;
 }
 
-
 .timeline .date:last-of-type {
     padding-right: 0;
     margin-bottom: 0;
@@ -413,23 +383,62 @@ The main styling portion targeting specific classes
     background-color: rgb(var(--background-color));
 }
 
-input[type="submit"] {
+.wrapper {
+    position: relative;
+}
+
+.submit {
+    width: 90px;
+    height: 40px;
     font-size: 2rem;
-    margin-top: 1rem;
-    width: initial;
+    margin-top: 20px;
+    margin-left: 50px;
     background-color: rgb(var(--primary-color));
     color: rgb(var(--background-color));
     padding: 1rem 2rem;
     border-radius: .8rem;
     cursor: pointer;
-    transition: background-color 650ms;
-    opacity: 100%;
     border: none;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: all .35s;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
 }
 
-input[type="submit"]:hover {
-    animation: pulse 2s infinite;
+.submit:hover {
+    background-color: rgb(var(--secondary-color));
+}
+
+.submit div {
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    transition: all .35s;
+    display: flex;
+    justify-content: center;
+}
+
+.submit .success {
+    opacity: 1;
+    visibility: hidden;
+    transition: all 0s;
+}
+
+.submit.is_active .success {
+    transition: all 0s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.submit.is_active .normal {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submit.submit.is_active {
+    width: 40px;
+    height: 40px;
 }
 
 .up {
@@ -467,6 +476,10 @@ input[type="submit"]:hover {
     padding: 5px;
 }
 
+.product-logo i {
+    color: gray;
+}
+
 .icon-image {
     transition: opacity 650ms;
     opacity: 1;
@@ -492,11 +505,11 @@ input[type="submit"]:hover {
     font-size: 1.6rem;
 }
 
-/* ========================
+/*
 Animations 
 
 Various animations to use for elements.
-===========================*/
+*/
 
 @keyframes pulse {
     0% {
@@ -510,12 +523,12 @@ Various animations to use for elements.
     }
 }
 
-/* ======================================== 
+/*
 Screen adjustment settings.
 
 Change settings depending on screen size. Useful for 
 smartphone or tablet layout.s 
-==========================================*/
+*/
 
 @media screen and (max-width: 768px) {
     body {

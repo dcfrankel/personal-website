@@ -12,73 +12,68 @@
 </head>
 
 <body>
-    <!-- All the scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://kit.fontawesome.com/41f6cbbf12.js" crossorigin="anonymous"></script>
-    <!-- Basic dropdown for navigation -->
-    <header>
-        <div class="dropdown" id="dropdown">
-            <button class="drop-button" id="drop-button">
-                <i class="material-icons md-60">menu</i>
-            </button>
-            <div class="dropdown-content">
+    <div class="top" id="top">
+        <!-- All the external scripts -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/41f6cbbf12.js" crossorigin="anonymous"></script>
+        <!-- Basic dropdown for navigation -->
+        <header>
+            <div class="dropdown" id="dropdown">
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-        </div>
-        <div class="landing-text">
-            <h1>David Frankel</h1>
-            <h6>Software Engineer | Tech Enthusiast</h6>
-        </div>
-    </header>
-    <!-- General information about myself -->
-    <section class="about" id="about" data-aos="fade-in" data-aos-delay="300">
-        <div class="container">
-            <div class="profile-img">
-                <img src="assets/profile.png" alt="Profile Image">
+            <div class="landing-text">
+                <h1>David Frankel</h1>
+                <h6>Software Engineer | Tech Enthusiast</h6>
             </div>
-            <div class="about-details">
-                <div class="about-heading">
-                    <h1>About</h1>
-                    <h6>Myself</h6>
+        </header>
+        <!-- General information about myself -->
+        <section class="about" id="about" data-aos="fade-in" data-aos-delay="300">
+            <div class="container">
+                <div class="profile-img">
+                    <img src="assets/profile.png" alt="Profile Image">
                 </div>
-                <p>
-                    Software Engineer, Tech Enthusiast, and one time genetics researcher.
-                    I'm interested in pretty much anything related to programmming, science, and computers.
-                    My favorite subjects include open source software, and functional programming.
-                </p>
+                <div class="about-details">
+                    <div class="about-heading">
+                        <h1>About</h1>
+                        <h6>Myself</h6>
+                    </div>
+                    <p>
+                        Software Engineer, Tech Enthusiast, and one time genetics researcher.
+                        I'm interested in pretty much anything related to programmming, science, and computers.
+                        My favorite subjects include open source software, and functional programming.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- Short description of of my skills -->
-    <section class="my-skills" id="my-skills">
-        <div class="skill">
-            <h1>Data Engineering</h1>
-            <div class="skill-container">
-                <i class="material-icons md-60">storage</i>
-                <p>
-                    I've build robust ETL pipelines with Apache Beam.
-                    Frequently use of Python / Pandas for Data Analysis, and Apache Spark
-                    for times when it's not enough.
-                    I've experience with Google Bigtable, Apache Hadoop, Google BigQuery,
-                    and just plain old reliable PosgreSQL.
-                </p>
+        </section>
+        <!-- Short description of of my skills -->
+        <section class="my-skills" id="my-skills">
+            <div class="skill">
+                <h1>Data Engineering</h1>
+                <div class="skill-container">
+                    <i class="material-icons md-60">storage</i>
+                    <p>
+                        I've build robust ETL pipelines with Apache Beam.
+                        Frequently use of Python / Pandas for Data Analysis, and Apache Spark
+                        for times when it's not enough.
+                        I've experience with Google Bigtable, Apache Hadoop, Google BigQuery,
+                        and just plain old reliable PosgreSQL.
+                    </p>
+                </div>
             </div>
+    </div>
+    <div class="skill" data-aos="fade-in" data-aos-delay="600">
+        <h1>Software Development</h1>
+        <div class="skill-container">
+            <i class="material-icons md-60">laptop_mac</i>
+            <p>
+                Docker, Google App Engine, Google Kubernetes, I've used them all.
+                While my day to day languages are Java and Python,
+                I enjoy learning new languages and programming paradigms.
+            </p>
         </div>
-        </div>
-        <div class="skill" data-aos="fade-in" data-aos-delay="600">
-            <h1>Software Development</h1>
-            <div class="skill-container">
-                <i class="material-icons md-60">laptop_mac</i>
-                <p>
-                    Docker, Google App Engine, Google Kubernetes, I've used them all.
-                    While my day to day languages are Java and Python,
-                    I enjoy learning new languages and programming paradigms.
-                </p>
-            </div>
-        </div>
+    </div>
     </section>
     <!-- Overview of some of the projects I've worked on -->
     <section class="projects" id="projects">
@@ -170,7 +165,16 @@
                 <label for="body">Body:</label>
                 <textarea name="body" id="body" cols="30" rows="10"
                     placeholder="Stimulating conversation topic here..."></textarea>
-                <input type="submit" value="Submit">
+                <div class="wrapper" id="wrapper">
+                    <button class="submit" id="submit">
+                        <div class="success">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                        <div class="normal">
+                            <span class="normal">Submit</span>
+                        </div>
+                    </button>
+                </div>
             </form>
         </div>
     </section>
@@ -180,18 +184,19 @@
         <div class="social-media">
             <div class="product-logo">
                 <a href="https://github.com/dcfrankel">
-                    <i class="fab fa-github-square" style="color: grey;"></i>
+                    <i class="fab fa-github-square"></i>
                 </a>
             </div>
             <div class="product-logo">
                 <a href="https://www.linkedin.com/in/frankelcdavid">
-                    <i class="fab fa-linkedin" style="color: grey;"></i>
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <p>&copy; 2020 - David Frankel - All rights reserved.</p>
     </footer>
     <input type="image" src="assets/arrow-up-circle.svg" class="up" id="up">
+    <!-- Add in main application script -->
     <script src="main.js"></script>
 </body>
 
