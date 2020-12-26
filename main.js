@@ -1,22 +1,29 @@
-$(document).ready(function() {
-    // Scroll to top button
-    $('#up').on('click', function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 2000)
+// Smooth scrolling for navigation links
+const navLinks = document.querySelectorAll('.dropdown-content a');
+for (const navLink of navLinks) {
+    navLink.addEventListener("click", scrollToNavLink);
+}
+
+function scrollToNavLink(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+
+    document.querySelector(href).scrollIntoView({
+        behavior: "smooth"
     });
-    
-    // Scroll slowly to reference when dropdown clicked
-    $('.dropdown-content a[href*="#"]').on('click', function() {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - 100
-        }, 1000)
-    });
-     
-    // Get those cool fade in animations for elements
-    AOS.init({
-        easing: 'ease',
-        duration: 1200,
-        once: true
+}
+
+// Up bottom scrolling
+const arrowButton = document.getElementById("up");
+arrowButton.addEventListener("click", function () {
+    document.getElementById("dropdown").scrollIntoView({
+        behavior: 'smooth'
     })
+});
+
+// Add in fade in animations for elements
+AOS.init({
+    easing: 'ease',
+    duration: 1200,
+    once: true
 })

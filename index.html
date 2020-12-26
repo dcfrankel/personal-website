@@ -14,18 +14,15 @@
 <body>
     <!-- All the scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://kit.fontawesome.com/41f6cbbf12.js" crossorigin="anonymous"></script>
     <!-- Basic dropdown for navigation -->
     <header>
-        <div class="dropdown">
+        <div class="dropdown" id="dropdown">
             <button class="drop-button" id="drop-button">
                 <i class="material-icons md-60">menu</i>
             </button>
             <div class="dropdown-content">
-                <a href="index.html" class="nav-link">Home</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -62,11 +59,11 @@
             <div class="skill-container">
                 <i class="material-icons md-60">storage</i>
                 <p>
-                     I've build robust ETL pipelines with Apache Beam. 
-                     Frequently use of Python / Pandas for Data Analysis, and Apache Spark 
-                     for times when it's not enough. 
-                     I've experience with Google Bigtable, Apache Hadoop, Google BigQuery, 
-                     and just plain old reliable PosgreSQL.
+                    I've build robust ETL pipelines with Apache Beam.
+                    Frequently use of Python / Pandas for Data Analysis, and Apache Spark
+                    for times when it's not enough.
+                    I've experience with Google Bigtable, Apache Hadoop, Google BigQuery,
+                    and just plain old reliable PosgreSQL.
                 </p>
             </div>
         </div>
@@ -77,7 +74,7 @@
                 <i class="material-icons md-60">laptop_mac</i>
                 <p>
                     Docker, Google App Engine, Google Kubernetes, I've used them all.
-                    While my day to day languages are Java and Python, 
+                    While my day to day languages are Java and Python,
                     I enjoy learning new languages and programming paradigms.
                 </p>
             </div>
@@ -139,17 +136,17 @@
                         <h1>Zoominfo</h1>
                         <p>
                             From Data Analayst to Software Engineer, my journey at ZoomInfo
-                            has been a thrilling ride and has opened my eyes to the transformative power of technology. 
+                            has been a thrilling ride and has opened my eyes to the transformative power of technology.
                         </p>
                     </li>
                     <!-- Line separator -->
-                    <hr class="rounded"> 
+                    <hr class="rounded">
                     <li class="date" data-date="2015 - 2017">
                         <h1>George Washington University</h1>
                         <p>
-                            Before I moved into Software Engineering, I worked as Research Associate in 
-                            a genetics laboratory. There I spent my days pipetting in the wet lab 
-                            and analyzing results. It was a fantastic experience 
+                            Before I moved into Software Engineering, I worked as Research Associate in
+                            a genetics laboratory. There I spent my days pipetting in the wet lab
+                            and analyzing results. It was a fantastic experience
                             and was I was fortunate to work with some wonderful people.
                         </p>
                     </li>
@@ -171,7 +168,8 @@
                 <input type="text" id="subject" name="subject" placeholder="Enter the subject you wish to discuss..."
                     required>
                 <label for="body">Body:</label>
-                <textarea name="body" id="body" cols="30" rows="10" placeholder="Stimulating conversation topic here..."></textarea>
+                <textarea name="body" id="body" cols="30" rows="10"
+                    placeholder="Stimulating conversation topic here..."></textarea>
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -191,11 +189,10 @@
                 </a>
             </div>
         </div>
-        <div class="up" id="up">
-            <img src="assets/arrow-up-circle.svg" alt="Arrow" class="up-arrow">
-        </div>
         <p>&copy; 2020 - David Frankel - All rights reserved.</p>
     </footer>
+    <input type="image" src="assets/arrow-up-circle.svg" class="up" id="up">
+    <script src="main.js"></script>
 </body>
 
 </html>
