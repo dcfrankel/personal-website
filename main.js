@@ -1,7 +1,7 @@
 // Add in fade in animations for elements
 AOS.init({
     easing: 'ease',
-    duration: 1200,
+    duration: 800,
     once: true
 })
 
