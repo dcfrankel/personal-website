@@ -101,6 +101,7 @@ The main styling portion targeting specific classes
 */
 
 .navigation {
+    padding-top: 2rem;
     display: flex;
     justify-content: space-evenly;
 }
