@@ -6,7 +6,7 @@ AOS.init({
 })
 
 // Smooth scrolling for navigation links
-const navLinks = document.querySelectorAll('.dropdown a');
+const navLinks = document.querySelectorAll('.navigation a');
 for (const navLink of navLinks) {
     navLink.addEventListener("click", scrollToNavLink);
 }

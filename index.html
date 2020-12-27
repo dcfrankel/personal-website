@@ -12,74 +12,74 @@
 </head>
 
 <body>
-    <div class="top" id="top">
-        <!-- All the external scripts -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="https://kit.fontawesome.com/41f6cbbf12.js" crossorigin="anonymous"></script>
-        <!-- Basic dropdown for navigation -->
-        <header>
-            <div class="dropdown" id="dropdown">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="landing-text">
-                <h1>David Frankel</h1>
-                <h6>Software Engineer | Tech Enthusiast</h6>
-            </div>
-        </header>
-        <!-- General information about myself -->
-        <section class="about" id="about" data-aos="fade-in" data-aos-delay="300">
-            <div class="container">
-                <div class="profile-img">
-                    <img src="assets/profile.png" alt="Profile Image">
-                </div>
-                <div class="about-details">
-                    <div class="about-heading">
-                        <h1>About</h1>
-                        <h6>Myself</h6>
-                    </div>
-                    <p>
-                        Software Engineer, Tech Enthusiast, and one time genetics researcher.
-                        I'm interested in pretty much anything related to programmming, science, and computers.
-                        My favorite subjects include open source software, and functional programming.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- Short description of of my skills -->
-        <section class="my-skills" id="my-skills">
-            <div class="skill">
-                <h1>Data Engineering</h1>
-                <div class="skill-container">
-                    <i class="material-icons md-60">storage</i>
-                    <p>
-                        I've build robust ETL pipelines with Apache Beam.
-                        Frequently use of Python / Pandas for Data Analysis, and Apache Spark
-                        for times when it's not enough.
-                        I've experience with Google Bigtable, Apache Hadoop, Google BigQuery,
-                        and just plain old reliable PosgreSQL.
-                    </p>
-                </div>
-            </div>
-    </div>
-    <div class="skill" data-aos="fade-in" data-aos-delay="600">
-        <h1>Software Development</h1>
-        <div class="skill-container">
-            <i class="material-icons md-60">laptop_mac</i>
-            <p>
-                Docker, Google App Engine, Google Kubernetes, I've used them all.
-                While my day to day languages are Java and Python,
-                I enjoy learning new languages and programming paradigms.
-            </p>
+    <div class="top" id="top"></div>
+    <!-- All the external scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/41f6cbbf12.js" crossorigin="anonymous"></script>
+    <!-- Basic dropdown for navigation -->
+    <header>
+        <div class="navigation" id="navigation">
+            <a href="#about" class="nav-link underline-header">About</a>
+            <a href="#projects" class="nav-link underline-header">Projects</a>
+            <a href="#contact" class="nav-link underline-header">Contact</a>
         </div>
-    </div>
+        <div class="landing-text">
+            <h1>David Frankel</h1>
+            <h6>Software Engineer | Tech Enthusiast</h6>
+        </div>
+    </header>
+    <!-- General information about myself -->
+    <section class="about" id="about" data-aos="fade-in" data-aos-delay="300">
+        <div class="container">
+            <div class="profile-img">
+                <img src="assets/profile.png" alt="Profile Image">
+            </div>
+            <div class="about-details">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>
+                    Software Engineer, Tech Enthusiast, and one time genetics researcher.
+                    I'm interested in pretty much anything related to programmming, science, and computers.
+                    My favorite subjects include open source software, and functional programming.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Short description of of my skills -->
+    <section class="my-skills" id="my-skills">
+        <div class="skill">
+            <h1>Data Engineering</h1>
+            <div class="skill-container">
+                <i class="material-icons md-60">storage</i>
+                <p>
+                    I've build robust ETL pipelines with Apache Beam.
+                    Frequently use of Python / Pandas for Data Analysis, and Apache Spark
+                    for times when it's not enough.
+                    I've experience with Google Bigtable, Apache Hadoop, Google BigQuery,
+                    and just plain old reliable PosgreSQL.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="skill" data-aos="fade-in" data-aos-delay="600">
+            <h1>Software Development</h1>
+            <div class="skill-container">
+                <i class="material-icons md-60">laptop_mac</i>
+                <p>
+                    Docker, Google App Engine, Google Kubernetes, I've used them all.
+                    While my day to day languages are Java and Python,
+                    I enjoy learning new languages and programming paradigms.
+                </p>
+            </div>
+        </div>
     </section>
     <!-- Overview of some of the projects I've worked on -->
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
-                <h1>My Projects</h1>
+                <h1 class="underline-header">My Projects</h1>
                 <h6>Some of my side projects</h6>
             </div>
             <div class="portfolio-item" data-aos="fade-in" data-aos-delay="300">
@@ -122,7 +122,7 @@
     <section class="experience" id="experience" data-aos="fade-in" data-aos-delay="300">
         <div class="container">
             <div class="section-heading">
-                <h1>Work Experience</h1>
+                <h1 class="underline-header">Work Experience</h1>
                 <h6>Past and Current Jobs</h6>
             </div>
             <div class="timeline">
@@ -153,7 +153,7 @@
     <section class="contact" id="contact" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <div class="section-heading">
-                <h1>Contact</h1>
+                <h1 class="underline-header">Contact</h1>
                 <h6>Let's Build Something, Together</h6>
             </div>
             <form enctype="text/plain" method="GET" action="mailto:dcfrankel@outlook.com">
