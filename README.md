@@ -1,3 +1,3 @@
-# Repo for My Personal Website
+# My Personal Website
 
-It will mostly be used for displaying portfolio items. At some point I might work on adding a blog-like section.
+For displaying my portfolio work history.
