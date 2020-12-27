@@ -371,20 +371,15 @@ The main styling portion targeting specific classes
     background-color: rgb(var(--background-color));
 }
 
-.wrapper {
-    position: relative;
-}
-
 .submit {
-    width: 90px;
-    height: 40px;
+    width: 8rem; 
+    height: 4rem;
+    margin-left: 4rem;
     font-size: 2rem;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 2rem;
     background-color: rgb(var(--primary-color));
     color: rgb(var(--background-color));
-    padding: 1rem 2rem;
-    border-radius: .8rem;
+    padding: 1rem;
     cursor: pointer;
     border: none;
     transition: all .35s;
