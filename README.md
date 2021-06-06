@@ -1,3 +1,3 @@
-# My Personal Website
+# Personal Website
 
-For displaying my portfolio work history.
+Mock personal website, originally written to explore traditional front end development (eg CSS, HTML, and Javasript).
